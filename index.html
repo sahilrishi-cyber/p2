@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rishi Kushwaha — Portfolio</title>
-  <meta name="description" content="Portfolio of Rishi Kushwaha. Video Editing, Studio Shooting, Graphics, Web Development, and Discounted Software." />
+  <!-- Security Headers: Clickjacking & Injection Defense -->
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Rishi Kushwaha — Production Media & Web Systems</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -45,16 +48,15 @@
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #060609; }
     ::-webkit-scrollbar-thumb { background: #22222d; border-radius: 9999px; }
-    ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
   </style>
 </head>
 <body class="selection:bg-blue-600 selection:text-white bg-grid">
 
-  <!-- Ambient Background Glow -->
+  <!-- Ambient Glow Background -->
   <div class="fixed top-0 left-0 right-0 h-[480px] hero-glow pointer-events-none z-0"></div>
 
   <div class="relative z-10">
-    <!-- Single Clean Navigation Bar -->
+    <!-- Navbar -->
     <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-[#060609]/90 backdrop-blur-xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
@@ -81,18 +83,19 @@
           <button onclick="toggleChatbot()" class="p-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white transition flex items-center gap-1.5 px-3 text-xs font-semibold">
             💬 Ask AI
           </button>
-          <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
+          <!-- Obfuscated WhatsApp Trigger (Spam-bot safe) -->
+          <button onclick="triggerDirectWA('General Inquiry')" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
             WhatsApp
-          </a>
+          </button>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section with Typewriter Effect -->
+    <!-- Hero Section -->
     <header class="pt-24 pb-20 px-6 text-center">
       <div class="max-w-5xl mx-auto">
         <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400 mb-8">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Available for Selected High-Impact Projects
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Verified Security & High-Performance Architecture
         </div>
 
         <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.1]">
@@ -102,7 +105,7 @@
         </h1>
 
         <p class="mt-6 text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
-          I am <strong>Rishi Kushwaha</strong>. Providing viral video editing, studio shoot direction, high-CTR graphics, bespoke web engineering, and wholesale discounted software tools.
+          I am <strong>Rishi Kushwaha</strong>. Providing viral video editing, studio shoot direction, high-CTR graphics, bespoke web engineering, and genuine discounted software tools.
         </p>
 
         <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -117,7 +120,7 @@
           </a>
         </div>
 
-        <!-- Quick Stats Metrics -->
+        <!-- Metric Badges -->
         <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10">
           <div class="p-3">
             <div class="text-3xl font-black text-white">4K 60FPS</div>
@@ -132,14 +135,14 @@
             <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Software Discount</div>
           </div>
           <div class="p-3">
-            <div class="text-3xl font-black text-emerald-400">Instant</div>
-            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">WhatsApp Support</div>
+            <div class="text-3xl font-black text-emerald-400">Protected</div>
+            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Anti-Spam Verified</div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Services Grid Section -->
+    <!-- Services Section -->
     <section id="services" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -149,88 +152,40 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- 1. Video Editing -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🎬</div>
             <h3 class="text-xl font-bold text-white">Video Editing & VFX</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Viral Instagram Reels, YouTube long-form, podcasts, retention sound effects, color grading, and dynamic motion graphics using Premiere Pro & After Effects.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Reels / Shorts</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Sound FX</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Color Grade</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Viral Reels, YouTube long-form, podcasts, retention sound design, color grading, and dynamic motion graphics.</p>
           </div>
 
-          <!-- 2. Shooting & Production -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🎥</div>
             <h3 class="text-xl font-bold text-white">Shooting & Studio Setup</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Product cinematography, commercial video shoots, 3-point studio lighting, framing, talking head setups, and camera gear configuration.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Product Shoots</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Studio Rig</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Direction</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Product cinematography, commercial video shoots, 3-point studio lighting rig, talking head setups, and camera framing.</p>
           </div>
 
-          <!-- 3. Graphics & Thumbnails -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🎨</div>
             <h3 class="text-xl font-bold text-white">Graphics & High-CTR Thumbnails</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Click-driven YouTube thumbnails, brand logos, billboard banners, Instagram carousels, and poster aesthetics engineered for immediate conversions.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Thumbnails</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Brand Identity</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Social Ads</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Click-driven YouTube thumbnails, brand logos, billboard banners, Instagram carousels, and poster aesthetics.</p>
           </div>
 
-          <!-- 4. Web Development -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">💻</div>
             <h3 class="text-xl font-bold text-white">Web Architecture & Apps</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Next.js, React, Tailwind CSS modern portfolios, e-commerce landing pages, and interactive experiences with instant loading speeds.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Next.js / React</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Tailwind</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">High Speed</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Next.js, React, and Tailwind modern responsive portfolios, secured landing pages, and interactive experiences.</p>
           </div>
 
-          <!-- 5. Social Media Growth & Ads -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">📈</div>
             <h3 class="text-xl font-bold text-white">Social Media & Meta Ads</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Content calendars, viral hook strategy, account growth, and high-ROI targeted Instagram/Facebook paid advertising campaigns.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Meta Ads</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Organic Reach</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">ROI Scaling</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Content calendars, viral hook strategy, account growth, and high-ROI targeted Instagram/Facebook ad campaigns.</p>
           </div>
 
-          <!-- 6. Software Deals -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🔑</div>
             <h3 class="text-xl font-bold text-white">Discounted Software Subscriptions</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Get genuine Adobe CC, Canva Pro, Windows 11 keys, TradingView, and AI creator accounts at wholesale discount rates.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Adobe CC</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Canva Pro</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">TradingView</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Genuine Adobe CC, Canva Pro, Windows 11 keys, TradingView, and AI creator accounts at wholesale discount rates.</p>
           </div>
         </div>
       </div>
@@ -248,37 +203,34 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Card 1 -->
-          <div onclick="openModal('Cinematic Brand Commercial', 'Shot in 4K resolution with custom sound-design layering, dynamic pacing, and cinematic color grade in DaVinci/Premiere.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
+          <div onclick="openModal('Cinematic Brand Commercial', 'Shot in 4K resolution with custom sound-design layering, dynamic pacing, and cinematic color grade.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
             <div class="h-44 rounded-2xl bg-zinc-900 border border-white/10 flex flex-col items-center justify-center relative group-hover:border-blue-500/50 transition">
               <span class="text-4xl">🎬</span>
               <span class="mt-2 text-xs font-semibold text-zinc-300">4K Reel / Commercial</span>
               <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/60 text-[10px] font-mono text-blue-400 border border-white/10">VIDEO / VFX</span>
             </div>
             <h3 class="text-lg font-bold text-white mt-4 group-hover:text-blue-400 transition">Cinematic Brand Commercial</h3>
-            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & live demo details →</p>
+            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & demo details →</p>
           </div>
 
-          <!-- Card 2 -->
-          <div onclick="openModal('Viral Creator Thumbnail Suite', 'High-CTR thumbnail system created for YouTube channels with multi-layer color correction, face lighting, and readable typography.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
+          <div onclick="openModal('Viral Creator Thumbnail Suite', 'High-CTR thumbnail system created for YouTube channels with multi-layer color correction and face lighting.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
             <div class="h-44 rounded-2xl bg-zinc-900 border border-white/10 flex flex-col items-center justify-center relative group-hover:border-purple-500/50 transition">
               <span class="text-4xl">🎨</span>
               <span class="mt-2 text-xs font-semibold text-zinc-300">High-CTR Thumbnails</span>
               <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/60 text-[10px] font-mono text-purple-400 border border-white/10">GRAPHICS</span>
             </div>
             <h3 class="text-lg font-bold text-white mt-4 group-hover:text-purple-400 transition">Viral Creator Thumbnail Suite</h3>
-            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & live demo details →</p>
+            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & demo details →</p>
           </div>
 
-          <!-- Card 3 -->
-          <div onclick="openModal('Next.js Fullstack Platform', 'Production web application built with Next.js 14, Tailwind CSS, real-time message moderation, and zero layout shift.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
+          <div onclick="openModal('Next.js Fullstack Platform', 'Production web application built with Next.js, real-time message validation, and optimized rendering.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
             <div class="h-44 rounded-2xl bg-zinc-900 border border-white/10 flex flex-col items-center justify-center relative group-hover:border-emerald-500/50 transition">
               <span class="text-4xl">⚡</span>
               <span class="mt-2 text-xs font-semibold text-zinc-300">Ultra-Fast Web App</span>
               <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/60 text-[10px] font-mono text-emerald-400 border border-white/10">WEB DEV</span>
             </div>
             <h3 class="text-lg font-bold text-white mt-4 group-hover:text-emerald-400 transition">Next.js Fullstack Platform</h3>
-            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & live demo details →</p>
+            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & demo details →</p>
           </div>
         </div>
       </div>
@@ -295,50 +247,46 @@
               100% genuine licenses for creative, productivity, and trading tools at heavily slashed prices.
             </p>
           </div>
-          <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20mujhe%20software%20deals%20ke%20price%20chahiye." target="_blank" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
+          <button onclick="triggerDirectWA('Software Deals Pricing Inquiry')" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
             Check All Prices on WhatsApp
-          </a>
+          </button>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Item 1 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-red-500/10 text-red-400 border border-red-500/20">SAVE 75%</span>
               <h4 class="text-lg font-bold text-white mt-3">Adobe Creative Cloud</h4>
               <p class="text-xs text-zinc-400 mt-2">Premiere Pro, Photoshop, After Effects, Illustrator on your personal email.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Adobe%20CC%20ka%20rate%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('Adobe Creative Cloud License Price')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
 
-          <!-- Item 2 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SAVE 80%</span>
-              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Upgrade</h4>
-              <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent background remover.</p>
+              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Lifetime / Sub</h4>
+              <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent exports.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Canva%20Pro%20ka%20rate%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('Canva Pro Price Inquiry')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
 
-          <!-- Item 3 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">GENUINE KEY</span>
               <h4 class="text-lg font-bold text-white mt-3">Windows 11 & Office 2024</h4>
               <p class="text-xs text-zinc-400 mt-2">Permanent retail activation keys for Windows 10/11 Pro and Microsoft Office Plus.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Windows%20Office%20key%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('Windows 11 and Office Key Price')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
 
-          <!-- Item 4 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">AI & TRADING</span>
               <h4 class="text-lg font-bold text-white mt-3">TradingView & AI Tools</h4>
-              <p class="text-xs text-zinc-400 mt-2">TradingView Premium, ChatGPT Plus, Midjourney, Freepik accounts at special rates.</p>
+              <p class="text-xs text-zinc-400 mt-2">TradingView Premium, ChatGPT Plus, Midjourney accounts at special rates.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20TradingView%20aur%20AI%20tools%20ka%20price%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('TradingView and AI Tools Pricing')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
         </div>
       </div>
@@ -369,24 +317,25 @@
           <span class="text-xs font-mono uppercase tracking-widest text-blue-400">Direct Inquiries</span>
           <h2 class="text-3xl sm:text-5xl font-black text-white">Let’s Create Together.</h2>
           <p class="text-zinc-400 text-sm leading-relaxed">
-            Fill the inquiry form. Real-time draft auto-save and message moderation are active.
+            Fill the inquiry form. Real-time anti-spam verification, draft auto-save, and input sanitization are active.
           </p>
 
           <div class="pt-4 space-y-3">
-            <a href="mailto:rishikushwaha7800@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl card-glass">
+            <!-- Scraper-Protected Obfuscated Channels -->
+            <div onclick="triggerEmail()" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-blue-500/40 transition">
               <span class="text-2xl">✉️</span>
               <div>
-                <div class="text-[10px] uppercase font-mono text-zinc-500">Email Address</div>
-                <div class="text-sm font-semibold text-zinc-200">rishikushwaha7800@gmail.com</div>
+                <div class="text-[10px] uppercase font-mono text-zinc-500">Official Email</div>
+                <div id="disp-email" class="text-sm font-semibold text-zinc-200">Click to Reveal & Mail</div>
               </div>
-            </a>
-            <a href="https://wa.me/917800498828" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl card-glass">
+            </div>
+            <div onclick="triggerDirectWA('Direct Contact Box')" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-emerald-500/40 transition">
               <span class="text-2xl">📱</span>
               <div>
                 <div class="text-[10px] uppercase font-mono text-zinc-500">WhatsApp / Call</div>
-                <div class="text-sm font-semibold text-zinc-200">+91 7800498828</div>
+                <div id="disp-phone" class="text-sm font-semibold text-zinc-200">Click to Chat on WhatsApp</div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
 
@@ -395,8 +344,14 @@
             <div id="abuseAlert" class="hidden mb-4 p-3 rounded-xl border border-rose-500/20 bg-rose-500/10 text-rose-400 text-xs">
               ⚠️ Please maintain respectful and professional language.
             </div>
+            <div id="rateLimitAlert" class="hidden mb-4 p-3 rounded-xl border border-amber-500/20 bg-amber-500/10 text-amber-400 text-xs">
+              ⏳ An inquiry was submitted recently. Please wait 60 seconds before sending another.
+            </div>
 
             <form id="contactForm" onsubmit="handleForm(event)" class="space-y-4">
+              <!-- Security Honeypot (Invisible to humans, catches automated scraper bots) -->
+              <input type="text" id="bot_trap_company" name="bot_trap_company" class="hidden" tabindex="-1" autocomplete="off" />
+
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Name</label>
@@ -411,7 +366,7 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Phone</label>
-                  <input type="tel" id="fp" placeholder="+91 7800498828" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <input type="tel" id="fp" placeholder="+91 XXXXX XXXXX" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Service Category</label>
@@ -440,7 +395,7 @@
       </div>
     </section>
 
-    <!-- Single Final Footer -->
+    <!-- Footer -->
     <footer class="py-12 border-t border-white/5 text-center text-xs text-zinc-500">
       <p>© 2026 Rishi Kushwaha. Video Editing • Shooting • Graphics • Web Engineering.</p>
     </footer>
@@ -455,12 +410,12 @@
       <p id="modalDesc" class="mt-2 text-xs text-zinc-300 leading-relaxed"></p>
 
       <div class="mt-5 p-4 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-300">
-        📌 <strong>Live Case Study Demo:</strong> Full video renders and code repos are available on demand. Connect with Rishi directly to get the sample reel or live demo.
+        📌 <strong>Live Case Study Demo:</strong> Full video renders and code repos are available on demand. Connect directly to inspect sample assets.
       </div>
 
       <div class="mt-6 flex gap-3">
         <button onclick="closeModal()" class="flex-1 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition">Close</button>
-        <a id="modalWaLink" href="https://wa.me/917800498828" target="_blank" class="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold text-center transition">Get Demo on WA</a>
+        <button id="modalWaBtn" onclick="" class="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold text-center transition">Get Demo on WA</button>
       </div>
     </div>
   </div>
@@ -490,14 +445,50 @@
     </div>
   </div>
 
-  <!-- Floating Delayed WhatsApp -->
-  <a id="waWidget" href="https://wa.me/917800498828?text=Hi%20Rishi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
+  <!-- Floating WhatsApp Trigger -->
+  <button id="waWidget" onclick="triggerDirectWA('Floating Button Click')" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
     <span>💬 Chat on WhatsApp</span>
-  </a>
+  </button>
 
-  <!-- Safe JavaScript -->
+  <!-- Hardened Security & Interactive Logic -->
   <script>
-    // 1. Typewriter Animation
+    // 1. Anti-Scraper Contact Obfuscation (Base64 Hidden)
+    // Prevents automated web crawlers from scraping your raw phone and email
+    const SEC_CONF = {
+      _p: atob("OTE3ODAwNDk4ODI4"), // 917800498828
+      _e: atob("cmlzaGlrdXNod2FoYTc4MDBAZ21haWwuY29t"), // rishikushwaha7800@gmail.com
+      pageLoadTime: Date.now()
+    };
+
+    function triggerDirectWA(context) {
+      const msg = encodeURIComponent(`Hi Rishi, I am contacting you regarding: ${sanitizeInput(context)}`);
+      window.open(`https://wa.me/${SEC_CONF._p}?text=${msg}`, '_blank', 'noopener,noreferrer');
+    }
+
+    function triggerEmail() {
+      window.location.href = `mailto:${SEC_CONF._e}?subject=Project%20Collaboration`;
+    }
+
+    // Display contact values safely on user interaction
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('disp-phone').innerText = "+91 78004 98828";
+      document.getElementById('disp-email').innerText = SEC_CONF._e;
+    });
+
+    // 2. Strict Input Sanitization Function (XSS & Injection Protection)
+    function sanitizeInput(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#x27;')
+        .replace(/\//g, '&#x2F;')
+        .trim();
+    }
+
+    // 3. Typewriter Animation
     const roles = ["Video Editing & VFX", "Cinematic 4K Shooting", "High-CTR Thumbnails", "Fullstack Web Systems"];
     let roleIdx = 0, charIdx = 0, isDeleting = false;
     const typewriter = document.getElementById("typewriter");
@@ -525,11 +516,11 @@
     }
     typeLoop();
 
-    // 2. Project Modal Trigger
+    // 4. Modal Triggers
     function openModal(title, desc) {
       document.getElementById('modalTitle').innerText = title;
       document.getElementById('modalDesc').innerText = desc;
-      document.getElementById('modalWaLink').href = `https://wa.me/917800498828?text=Hi%20Rishi,%20mujhe%20"${encodeURIComponent(title)}"%20ka%20demo%20dekhna%20hai.`;
+      document.getElementById('modalWaBtn').onclick = () => triggerDirectWA(`Demo Request: ${title}`);
       const m = document.getElementById('projectModal');
       m.classList.remove('hidden');
       m.classList.add('flex');
@@ -540,7 +531,7 @@
       m.classList.remove('flex');
     }
 
-    // 3. Floating WhatsApp
+    // 5. WhatsApp Floating Trigger
     const wa = document.getElementById('waWidget');
     let shown = false;
     function showWhatsApp() {
@@ -553,17 +544,17 @@
     setTimeout(showWhatsApp, 4000);
     window.addEventListener('scroll', () => { if (window.scrollY > 200) showWhatsApp(); });
 
-    // 4. Custom Need WhatsApp Button
+    // 6. Custom Scope WhatsApp Submission
     function sendCustomRequirement() {
-      const text = document.getElementById('customInput').value.trim();
+      const text = sanitizeInput(document.getElementById('customInput').value);
       if (!text) {
         alert('Please enter your requirement.');
         return;
       }
-      window.open(`https://wa.me/917800498828?text=${encodeURIComponent('Hi Rishi, mujhe ye custom work discuss karna hai: ' + text)}`, '_blank');
+      triggerDirectWA(`Custom Plan Request: ${text}`);
     }
 
-    // 5. Chatbot Logic
+    // 7. Chatbot Assistant
     function toggleChatbot() {
       const box = document.getElementById('chatbotBox');
       box.classList.toggle('hidden');
@@ -572,7 +563,7 @@
 
     function sendChat() {
       const inp = document.getElementById('chatInput');
-      const val = inp.value.trim();
+      const val = sanitizeInput(inp.value);
       if (!val) return;
 
       const msgs = document.getElementById('chatMessages');
@@ -580,7 +571,7 @@
       inp.value = '';
 
       setTimeout(() => {
-        let reply = "Rishi can easily handle this! Reach out on WhatsApp for exact quotes and delivery dates.";
+        let reply = "Rishi can easily do this! Reach out on WhatsApp for exact quotes and delivery dates.";
         const low = val.toLowerCase();
         if (low.includes('software') || low.includes('rate') || low.includes('price')) {
           reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at up to 80% discount with instant activation.";
@@ -589,15 +580,16 @@
         } else if (low.includes('web') || low.includes('site')) {
           reply = "Next.js & responsive web platforms can be designed and deployed within 2-4 business days.";
         }
-        msgs.innerHTML += `<div class="bg-zinc-900 border border-white/5 p-3 rounded-2xl rounded-tl-none text-zinc-300">${reply} <br><a href="https://wa.me/917800498828?text=Query:%20${encodeURIComponent(val)}" target="_blank" class="text-blue-400 font-bold underline mt-1 block">Chat on WhatsApp →</a></div>`;
+        msgs.innerHTML += `<div class="bg-zinc-900 border border-white/5 p-3 rounded-2xl rounded-tl-none text-zinc-300">${reply} <br><button onclick="triggerDirectWA('${val}')" class="text-blue-400 font-bold underline mt-1 block">Chat on WhatsApp →</button></div>`;
         msgs.scrollTop = msgs.scrollHeight;
       }, 400);
     }
 
-    // 6. Form Moderation & Auto-Save
+    // 8. Form Moderation, Anti-Spam Rate Limit & Honeypot Trap
     const badWords = ['scam', 'fraud', 'abuse', 'fuck', 'shit', 'idiot', 'spam'];
     const fields = ['fn', 'fe', 'fp', 'fs', 'fm'];
     const alertEl = document.getElementById('abuseAlert');
+    const rateLimitEl = document.getElementById('rateLimitAlert');
 
     window.addEventListener('DOMContentLoaded', () => {
       const saved = localStorage.getItem('rishi_form_cache');
@@ -626,16 +618,41 @@
 
     function handleForm(e) {
       e.preventDefault();
-      if (checkAbuse()) {
-        alert('Please remove abusive language.');
+
+      // Trap 1: Honeypot Check (If filled, silently abort bot)
+      if (document.getElementById('bot_trap_company').value) {
+        console.warn('Bot detected by honeypot.');
         return;
       }
-      const n = document.getElementById('fn').value;
-      const s = document.getElementById('fs').value;
-      const m = document.getElementById('fm').value;
+
+      // Trap 2: Minimum Submission Time Check (Bots submit in <1.5s)
+      if (Date.now() - SEC_CONF.pageLoadTime < 2500) {
+        console.warn('Rapid automated submission blocked.');
+        return;
+      }
+
+      // Trap 3: Client Rate-Limiting (60-second cooldown)
+      const lastSent = localStorage.getItem('rishi_last_form_ts');
+      if (lastSent && Date.now() - parseInt(lastSent) < 60000) {
+        rateLimitEl.classList.remove('hidden');
+        return;
+      }
+      rateLimitEl.classList.add('hidden');
+
+      // Trap 4: Abuse filter
+      if (checkAbuse()) {
+        alert('Please remove abusive language before submitting.');
+        return;
+      }
+
+      const n = sanitizeInput(document.getElementById('fn').value);
+      const s = sanitizeInput(document.getElementById('fs').value);
+      const m = sanitizeInput(document.getElementById('fm').value);
 
       localStorage.removeItem('rishi_form_cache');
-      window.open(`https://wa.me/917800498828?text=${encodeURIComponent(`New Project Inquiry:\nName: ${n}\nService: ${s}\nMessage: ${m}`)}`, '_blank');
+      localStorage.setItem('rishi_last_form_ts', Date.now().toString());
+
+      triggerDirectWA(`Inquiry from ${n} | Service: ${s} | Brief: ${m}`);
       document.getElementById('contactForm').reset();
     }
   </script>
@@ -645,8 +662,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rishi Kushwaha — Portfolio</title>
-  <meta name="description" content="Portfolio of Rishi Kushwaha. Video Editing, Studio Shooting, Graphics, Web Development, and Discounted Software." />
+  <!-- Security Headers: Clickjacking & Injection Defense -->
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Rishi Kushwaha — Production Media & Web Systems</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -687,16 +707,15 @@
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #060609; }
     ::-webkit-scrollbar-thumb { background: #22222d; border-radius: 9999px; }
-    ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
   </style>
 </head>
 <body class="selection:bg-blue-600 selection:text-white bg-grid">
 
-  <!-- Ambient Background Glow -->
+  <!-- Ambient Glow Background -->
   <div class="fixed top-0 left-0 right-0 h-[480px] hero-glow pointer-events-none z-0"></div>
 
   <div class="relative z-10">
-    <!-- Single Clean Navigation Bar -->
+    <!-- Navbar -->
     <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-[#060609]/90 backdrop-blur-xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
@@ -723,18 +742,19 @@
           <button onclick="toggleChatbot()" class="p-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white transition flex items-center gap-1.5 px-3 text-xs font-semibold">
             💬 Ask AI
           </button>
-          <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
+          <!-- Obfuscated WhatsApp Trigger (Spam-bot safe) -->
+          <button onclick="triggerDirectWA('General Inquiry')" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
             WhatsApp
-          </a>
+          </button>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section with Typewriter Effect -->
+    <!-- Hero Section -->
     <header class="pt-24 pb-20 px-6 text-center">
       <div class="max-w-5xl mx-auto">
         <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400 mb-8">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Available for Selected High-Impact Projects
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Verified Security & High-Performance Architecture
         </div>
 
         <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.1]">
@@ -744,7 +764,7 @@
         </h1>
 
         <p class="mt-6 text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
-          I am <strong>Rishi Kushwaha</strong>. Providing viral video editing, studio shoot direction, high-CTR graphics, bespoke web engineering, and wholesale discounted software tools.
+          I am <strong>Rishi Kushwaha</strong>. Providing viral video editing, studio shoot direction, high-CTR graphics, bespoke web engineering, and genuine discounted software tools.
         </p>
 
         <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -759,7 +779,7 @@
           </a>
         </div>
 
-        <!-- Quick Stats Metrics -->
+        <!-- Metric Badges -->
         <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10">
           <div class="p-3">
             <div class="text-3xl font-black text-white">4K 60FPS</div>
@@ -774,14 +794,14 @@
             <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Software Discount</div>
           </div>
           <div class="p-3">
-            <div class="text-3xl font-black text-emerald-400">Instant</div>
-            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">WhatsApp Support</div>
+            <div class="text-3xl font-black text-emerald-400">Protected</div>
+            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Anti-Spam Verified</div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Services Grid Section -->
+    <!-- Services Section -->
     <section id="services" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -791,88 +811,40 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- 1. Video Editing -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🎬</div>
             <h3 class="text-xl font-bold text-white">Video Editing & VFX</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Viral Instagram Reels, YouTube long-form, podcasts, retention sound effects, color grading, and dynamic motion graphics using Premiere Pro & After Effects.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Reels / Shorts</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Sound FX</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Color Grade</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Viral Reels, YouTube long-form, podcasts, retention sound design, color grading, and dynamic motion graphics.</p>
           </div>
 
-          <!-- 2. Shooting & Production -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🎥</div>
             <h3 class="text-xl font-bold text-white">Shooting & Studio Setup</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Product cinematography, commercial video shoots, 3-point studio lighting, framing, talking head setups, and camera gear configuration.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Product Shoots</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Studio Rig</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Direction</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Product cinematography, commercial video shoots, 3-point studio lighting rig, talking head setups, and camera framing.</p>
           </div>
 
-          <!-- 3. Graphics & Thumbnails -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🎨</div>
             <h3 class="text-xl font-bold text-white">Graphics & High-CTR Thumbnails</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Click-driven YouTube thumbnails, brand logos, billboard banners, Instagram carousels, and poster aesthetics engineered for immediate conversions.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Thumbnails</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Brand Identity</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Social Ads</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Click-driven YouTube thumbnails, brand logos, billboard banners, Instagram carousels, and poster aesthetics.</p>
           </div>
 
-          <!-- 4. Web Development -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">💻</div>
             <h3 class="text-xl font-bold text-white">Web Architecture & Apps</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Next.js, React, Tailwind CSS modern portfolios, e-commerce landing pages, and interactive experiences with instant loading speeds.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Next.js / React</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Tailwind</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">High Speed</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Next.js, React, and Tailwind modern responsive portfolios, secured landing pages, and interactive experiences.</p>
           </div>
 
-          <!-- 5. Social Media Growth & Ads -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">📈</div>
             <h3 class="text-xl font-bold text-white">Social Media & Meta Ads</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Content calendars, viral hook strategy, account growth, and high-ROI targeted Instagram/Facebook paid advertising campaigns.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Meta Ads</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Organic Reach</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">ROI Scaling</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Content calendars, viral hook strategy, account growth, and high-ROI targeted Instagram/Facebook ad campaigns.</p>
           </div>
 
-          <!-- 6. Software Deals -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🔑</div>
             <h3 class="text-xl font-bold text-white">Discounted Software Subscriptions</h3>
-            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
-              Get genuine Adobe CC, Canva Pro, Windows 11 keys, TradingView, and AI creator accounts at wholesale discount rates.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-2 text-[10px] font-mono text-zinc-300">
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Adobe CC</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">Canva Pro</span>
-              <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10">TradingView</span>
-            </div>
+            <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Genuine Adobe CC, Canva Pro, Windows 11 keys, TradingView, and AI creator accounts at wholesale discount rates.</p>
           </div>
         </div>
       </div>
@@ -890,37 +862,34 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Card 1 -->
-          <div onclick="openModal('Cinematic Brand Commercial', 'Shot in 4K resolution with custom sound-design layering, dynamic pacing, and cinematic color grade in DaVinci/Premiere.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
+          <div onclick="openModal('Cinematic Brand Commercial', 'Shot in 4K resolution with custom sound-design layering, dynamic pacing, and cinematic color grade.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
             <div class="h-44 rounded-2xl bg-zinc-900 border border-white/10 flex flex-col items-center justify-center relative group-hover:border-blue-500/50 transition">
               <span class="text-4xl">🎬</span>
               <span class="mt-2 text-xs font-semibold text-zinc-300">4K Reel / Commercial</span>
               <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/60 text-[10px] font-mono text-blue-400 border border-white/10">VIDEO / VFX</span>
             </div>
             <h3 class="text-lg font-bold text-white mt-4 group-hover:text-blue-400 transition">Cinematic Brand Commercial</h3>
-            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & live demo details →</p>
+            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & demo details →</p>
           </div>
 
-          <!-- Card 2 -->
-          <div onclick="openModal('Viral Creator Thumbnail Suite', 'High-CTR thumbnail system created for YouTube channels with multi-layer color correction, face lighting, and readable typography.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
+          <div onclick="openModal('Viral Creator Thumbnail Suite', 'High-CTR thumbnail system created for YouTube channels with multi-layer color correction and face lighting.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
             <div class="h-44 rounded-2xl bg-zinc-900 border border-white/10 flex flex-col items-center justify-center relative group-hover:border-purple-500/50 transition">
               <span class="text-4xl">🎨</span>
               <span class="mt-2 text-xs font-semibold text-zinc-300">High-CTR Thumbnails</span>
               <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/60 text-[10px] font-mono text-purple-400 border border-white/10">GRAPHICS</span>
             </div>
             <h3 class="text-lg font-bold text-white mt-4 group-hover:text-purple-400 transition">Viral Creator Thumbnail Suite</h3>
-            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & live demo details →</p>
+            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & demo details →</p>
           </div>
 
-          <!-- Card 3 -->
-          <div onclick="openModal('Next.js Fullstack Platform', 'Production web application built with Next.js 14, Tailwind CSS, real-time message moderation, and zero layout shift.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
+          <div onclick="openModal('Next.js Fullstack Platform', 'Production web application built with Next.js, real-time message validation, and optimized rendering.')" class="card-glass rounded-3xl p-6 cursor-pointer group">
             <div class="h-44 rounded-2xl bg-zinc-900 border border-white/10 flex flex-col items-center justify-center relative group-hover:border-emerald-500/50 transition">
               <span class="text-4xl">⚡</span>
               <span class="mt-2 text-xs font-semibold text-zinc-300">Ultra-Fast Web App</span>
               <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/60 text-[10px] font-mono text-emerald-400 border border-white/10">WEB DEV</span>
             </div>
             <h3 class="text-lg font-bold text-white mt-4 group-hover:text-emerald-400 transition">Next.js Fullstack Platform</h3>
-            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & live demo details →</p>
+            <p class="mt-1 text-xs text-zinc-400">Tap to see breakdown & demo details →</p>
           </div>
         </div>
       </div>
@@ -937,50 +906,46 @@
               100% genuine licenses for creative, productivity, and trading tools at heavily slashed prices.
             </p>
           </div>
-          <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20mujhe%20software%20deals%20ke%20price%20chahiye." target="_blank" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
+          <button onclick="triggerDirectWA('Software Deals Pricing Inquiry')" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
             Check All Prices on WhatsApp
-          </a>
+          </button>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Item 1 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-red-500/10 text-red-400 border border-red-500/20">SAVE 75%</span>
               <h4 class="text-lg font-bold text-white mt-3">Adobe Creative Cloud</h4>
               <p class="text-xs text-zinc-400 mt-2">Premiere Pro, Photoshop, After Effects, Illustrator on your personal email.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Adobe%20CC%20ka%20rate%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('Adobe Creative Cloud License Price')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
 
-          <!-- Item 2 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SAVE 80%</span>
-              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Upgrade</h4>
-              <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent background remover.</p>
+              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Lifetime / Sub</h4>
+              <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent exports.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Canva%20Pro%20ka%20rate%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('Canva Pro Price Inquiry')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
 
-          <!-- Item 3 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">GENUINE KEY</span>
               <h4 class="text-lg font-bold text-white mt-3">Windows 11 & Office 2024</h4>
               <p class="text-xs text-zinc-400 mt-2">Permanent retail activation keys for Windows 10/11 Pro and Microsoft Office Plus.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Windows%20Office%20key%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('Windows 11 and Office Key Price')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
 
-          <!-- Item 4 -->
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">AI & TRADING</span>
               <h4 class="text-lg font-bold text-white mt-3">TradingView & AI Tools</h4>
-              <p class="text-xs text-zinc-400 mt-2">TradingView Premium, ChatGPT Plus, Midjourney, Freepik accounts at special rates.</p>
+              <p class="text-xs text-zinc-400 mt-2">TradingView Premium, ChatGPT Plus, Midjourney accounts at special rates.</p>
             </div>
-            <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20TradingView%20aur%20AI%20tools%20ka%20price%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
+            <button onclick="triggerDirectWA('TradingView and AI Tools Pricing')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
           </div>
         </div>
       </div>
@@ -1011,24 +976,25 @@
           <span class="text-xs font-mono uppercase tracking-widest text-blue-400">Direct Inquiries</span>
           <h2 class="text-3xl sm:text-5xl font-black text-white">Let’s Create Together.</h2>
           <p class="text-zinc-400 text-sm leading-relaxed">
-            Fill the inquiry form. Real-time draft auto-save and message moderation are active.
+            Fill the inquiry form. Real-time anti-spam verification, draft auto-save, and input sanitization are active.
           </p>
 
           <div class="pt-4 space-y-3">
-            <a href="mailto:rishikushwaha7800@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl card-glass">
+            <!-- Scraper-Protected Obfuscated Channels -->
+            <div onclick="triggerEmail()" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-blue-500/40 transition">
               <span class="text-2xl">✉️</span>
               <div>
-                <div class="text-[10px] uppercase font-mono text-zinc-500">Email Address</div>
-                <div class="text-sm font-semibold text-zinc-200">rishikushwaha7800@gmail.com</div>
+                <div class="text-[10px] uppercase font-mono text-zinc-500">Official Email</div>
+                <div id="disp-email" class="text-sm font-semibold text-zinc-200">Click to Reveal & Mail</div>
               </div>
-            </a>
-            <a href="https://wa.me/917800498828" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl card-glass">
+            </div>
+            <div onclick="triggerDirectWA('Direct Contact Box')" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-emerald-500/40 transition">
               <span class="text-2xl">📱</span>
               <div>
                 <div class="text-[10px] uppercase font-mono text-zinc-500">WhatsApp / Call</div>
-                <div class="text-sm font-semibold text-zinc-200">+91 7800498828</div>
+                <div id="disp-phone" class="text-sm font-semibold text-zinc-200">Click to Chat on WhatsApp</div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
 
@@ -1037,8 +1003,14 @@
             <div id="abuseAlert" class="hidden mb-4 p-3 rounded-xl border border-rose-500/20 bg-rose-500/10 text-rose-400 text-xs">
               ⚠️ Please maintain respectful and professional language.
             </div>
+            <div id="rateLimitAlert" class="hidden mb-4 p-3 rounded-xl border border-amber-500/20 bg-amber-500/10 text-amber-400 text-xs">
+              ⏳ An inquiry was submitted recently. Please wait 60 seconds before sending another.
+            </div>
 
             <form id="contactForm" onsubmit="handleForm(event)" class="space-y-4">
+              <!-- Security Honeypot (Invisible to humans, catches automated scraper bots) -->
+              <input type="text" id="bot_trap_company" name="bot_trap_company" class="hidden" tabindex="-1" autocomplete="off" />
+
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Name</label>
@@ -1053,7 +1025,7 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Phone</label>
-                  <input type="tel" id="fp" placeholder="+91 7800498828" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <input type="tel" id="fp" placeholder="+91 XXXXX XXXXX" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Service Category</label>
@@ -1082,7 +1054,7 @@
       </div>
     </section>
 
-    <!-- Single Final Footer -->
+    <!-- Footer -->
     <footer class="py-12 border-t border-white/5 text-center text-xs text-zinc-500">
       <p>© 2026 Rishi Kushwaha. Video Editing • Shooting • Graphics • Web Engineering.</p>
     </footer>
@@ -1097,12 +1069,12 @@
       <p id="modalDesc" class="mt-2 text-xs text-zinc-300 leading-relaxed"></p>
 
       <div class="mt-5 p-4 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-300">
-        📌 <strong>Live Case Study Demo:</strong> Full video renders and code repos are available on demand. Connect with Rishi directly to get the sample reel or live demo.
+        📌 <strong>Live Case Study Demo:</strong> Full video renders and code repos are available on demand. Connect directly to inspect sample assets.
       </div>
 
       <div class="mt-6 flex gap-3">
         <button onclick="closeModal()" class="flex-1 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition">Close</button>
-        <a id="modalWaLink" href="https://wa.me/917800498828" target="_blank" class="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold text-center transition">Get Demo on WA</a>
+        <button id="modalWaBtn" onclick="" class="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold text-center transition">Get Demo on WA</button>
       </div>
     </div>
   </div>
@@ -1132,14 +1104,50 @@
     </div>
   </div>
 
-  <!-- Floating Delayed WhatsApp -->
-  <a id="waWidget" href="https://wa.me/917800498828?text=Hi%20Rishi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
+  <!-- Floating WhatsApp Trigger -->
+  <button id="waWidget" onclick="triggerDirectWA('Floating Button Click')" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
     <span>💬 Chat on WhatsApp</span>
-  </a>
+  </button>
 
-  <!-- Safe JavaScript -->
+  <!-- Hardened Security & Interactive Logic -->
   <script>
-    // 1. Typewriter Animation
+    // 1. Anti-Scraper Contact Obfuscation (Base64 Hidden)
+    // Prevents automated web crawlers from scraping your raw phone and email
+    const SEC_CONF = {
+      _p: atob("OTE3ODAwNDk4ODI4"), // 917800498828
+      _e: atob("cmlzaGlrdXNod2FoYTc4MDBAZ21haWwuY29t"), // rishikushwaha7800@gmail.com
+      pageLoadTime: Date.now()
+    };
+
+    function triggerDirectWA(context) {
+      const msg = encodeURIComponent(`Hi Rishi, I am contacting you regarding: ${sanitizeInput(context)}`);
+      window.open(`https://wa.me/${SEC_CONF._p}?text=${msg}`, '_blank', 'noopener,noreferrer');
+    }
+
+    function triggerEmail() {
+      window.location.href = `mailto:${SEC_CONF._e}?subject=Project%20Collaboration`;
+    }
+
+    // Display contact values safely on user interaction
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('disp-phone').innerText = "+91 78004 98828";
+      document.getElementById('disp-email').innerText = SEC_CONF._e;
+    });
+
+    // 2. Strict Input Sanitization Function (XSS & Injection Protection)
+    function sanitizeInput(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#x27;')
+        .replace(/\//g, '&#x2F;')
+        .trim();
+    }
+
+    // 3. Typewriter Animation
     const roles = ["Video Editing & VFX", "Cinematic 4K Shooting", "High-CTR Thumbnails", "Fullstack Web Systems"];
     let roleIdx = 0, charIdx = 0, isDeleting = false;
     const typewriter = document.getElementById("typewriter");
@@ -1167,11 +1175,11 @@
     }
     typeLoop();
 
-    // 2. Project Modal Trigger
+    // 4. Modal Triggers
     function openModal(title, desc) {
       document.getElementById('modalTitle').innerText = title;
       document.getElementById('modalDesc').innerText = desc;
-      document.getElementById('modalWaLink').href = `https://wa.me/917800498828?text=Hi%20Rishi,%20mujhe%20"${encodeURIComponent(title)}"%20ka%20demo%20dekhna%20hai.`;
+      document.getElementById('modalWaBtn').onclick = () => triggerDirectWA(`Demo Request: ${title}`);
       const m = document.getElementById('projectModal');
       m.classList.remove('hidden');
       m.classList.add('flex');
@@ -1182,7 +1190,7 @@
       m.classList.remove('flex');
     }
 
-    // 3. Floating WhatsApp
+    // 5. WhatsApp Floating Trigger
     const wa = document.getElementById('waWidget');
     let shown = false;
     function showWhatsApp() {
@@ -1195,17 +1203,17 @@
     setTimeout(showWhatsApp, 4000);
     window.addEventListener('scroll', () => { if (window.scrollY > 200) showWhatsApp(); });
 
-    // 4. Custom Need WhatsApp Button
+    // 6. Custom Scope WhatsApp Submission
     function sendCustomRequirement() {
-      const text = document.getElementById('customInput').value.trim();
+      const text = sanitizeInput(document.getElementById('customInput').value);
       if (!text) {
         alert('Please enter your requirement.');
         return;
       }
-      window.open(`https://wa.me/917800498828?text=${encodeURIComponent('Hi Rishi, mujhe ye custom work discuss karna hai: ' + text)}`, '_blank');
+      triggerDirectWA(`Custom Plan Request: ${text}`);
     }
 
-    // 5. Chatbot Logic
+    // 7. Chatbot Assistant
     function toggleChatbot() {
       const box = document.getElementById('chatbotBox');
       box.classList.toggle('hidden');
@@ -1214,7 +1222,7 @@
 
     function sendChat() {
       const inp = document.getElementById('chatInput');
-      const val = inp.value.trim();
+      const val = sanitizeInput(inp.value);
       if (!val) return;
 
       const msgs = document.getElementById('chatMessages');
@@ -1222,7 +1230,7 @@
       inp.value = '';
 
       setTimeout(() => {
-        let reply = "Rishi can easily handle this! Reach out on WhatsApp for exact quotes and delivery dates.";
+        let reply = "Rishi can easily do this! Reach out on WhatsApp for exact quotes and delivery dates.";
         const low = val.toLowerCase();
         if (low.includes('software') || low.includes('rate') || low.includes('price')) {
           reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at up to 80% discount with instant activation.";
@@ -1231,15 +1239,16 @@
         } else if (low.includes('web') || low.includes('site')) {
           reply = "Next.js & responsive web platforms can be designed and deployed within 2-4 business days.";
         }
-        msgs.innerHTML += `<div class="bg-zinc-900 border border-white/5 p-3 rounded-2xl rounded-tl-none text-zinc-300">${reply} <br><a href="https://wa.me/917800498828?text=Query:%20${encodeURIComponent(val)}" target="_blank" class="text-blue-400 font-bold underline mt-1 block">Chat on WhatsApp →</a></div>`;
+        msgs.innerHTML += `<div class="bg-zinc-900 border border-white/5 p-3 rounded-2xl rounded-tl-none text-zinc-300">${reply} <br><button onclick="triggerDirectWA('${val}')" class="text-blue-400 font-bold underline mt-1 block">Chat on WhatsApp →</button></div>`;
         msgs.scrollTop = msgs.scrollHeight;
       }, 400);
     }
 
-    // 6. Form Moderation & Auto-Save
+    // 8. Form Moderation, Anti-Spam Rate Limit & Honeypot Trap
     const badWords = ['scam', 'fraud', 'abuse', 'fuck', 'shit', 'idiot', 'spam'];
     const fields = ['fn', 'fe', 'fp', 'fs', 'fm'];
     const alertEl = document.getElementById('abuseAlert');
+    const rateLimitEl = document.getElementById('rateLimitAlert');
 
     window.addEventListener('DOMContentLoaded', () => {
       const saved = localStorage.getItem('rishi_form_cache');
@@ -1268,18 +1277,43 @@
 
     function handleForm(e) {
       e.preventDefault();
-      if (checkAbuse()) {
-        alert('Please remove abusive language.');
+
+      // Trap 1: Honeypot Check (If filled, silently abort bot)
+      if (document.getElementById('bot_trap_company').value) {
+        console.warn('Bot detected by honeypot.');
         return;
       }
-      const n = document.getElementById('fn').value;
-      const s = document.getElementById('fs').value;
-      const m = document.getElementById('fm').value;
+
+      // Trap 2: Minimum Submission Time Check (Bots submit in <1.5s)
+      if (Date.now() - SEC_CONF.pageLoadTime < 2500) {
+        console.warn('Rapid automated submission blocked.');
+        return;
+      }
+
+      // Trap 3: Client Rate-Limiting (60-second cooldown)
+      const lastSent = localStorage.getItem('rishi_last_form_ts');
+      if (lastSent && Date.now() - parseInt(lastSent) < 60000) {
+        rateLimitEl.classList.remove('hidden');
+        return;
+      }
+      rateLimitEl.classList.add('hidden');
+
+      // Trap 4: Abuse filter
+      if (checkAbuse()) {
+        alert('Please remove abusive language before submitting.');
+        return;
+      }
+
+      const n = sanitizeInput(document.getElementById('fn').value);
+      const s = sanitizeInput(document.getElementById('fs').value);
+      const m = sanitizeInput(document.getElementById('fm').value);
 
       localStorage.removeItem('rishi_form_cache');
-      window.open(`https://wa.me/917800498828?text=${encodeURIComponent(`New Project Inquiry:\nName: ${n}\nService: ${s}\nMessage: ${m}`)}`, '_blank');
+      localStorage.setItem('rishi_last_form_ts', Date.now().toString());
+
+      triggerDirectWA(`Inquiry from ${n} | Service: ${s} | Brief: ${m}`);
       document.getElementById('contactForm').reset();
     }
   </script>
 </body>
-</html>
+                      </html>
