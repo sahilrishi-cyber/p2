@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Security Headers: Clickjacking & Injection Defense -->
   <meta http-equiv="X-Frame-Options" content="DENY" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Rishi Kushwaha — Production Media & Web Systems</title>
 
   <!-- Tailwind CSS CDN -->
@@ -83,8 +81,7 @@
           <button onclick="toggleChatbot()" class="p-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white transition flex items-center gap-1.5 px-3 text-xs font-semibold">
             💬 Ask AI
           </button>
-          <!-- Obfuscated WhatsApp Trigger (Spam-bot safe) -->
-          <button onclick="triggerDirectWA('General Inquiry')" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
+          <button onclick="triggerDirectWA('Navbar Quick WhatsApp')" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
             WhatsApp
           </button>
         </div>
@@ -95,7 +92,7 @@
     <header class="pt-24 pb-20 px-6 text-center">
       <div class="max-w-5xl mx-auto">
         <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400 mb-8">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Verified Security & High-Performance Architecture
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Available for Selected High-Impact Projects
         </div>
 
         <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.1]">
@@ -135,8 +132,8 @@
             <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Software Discount</div>
           </div>
           <div class="p-3">
-            <div class="text-3xl font-black text-emerald-400">Protected</div>
-            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Anti-Spam Verified</div>
+            <div class="text-3xl font-black text-emerald-400">Direct</div>
+            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Instant Support</div>
           </div>
         </div>
       </div>
@@ -265,7 +262,7 @@
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SAVE 80%</span>
-              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Lifetime / Sub</h4>
+              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Upgrade</h4>
               <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent exports.</p>
             </div>
             <button onclick="triggerDirectWA('Canva Pro Price Inquiry')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
@@ -310,63 +307,72 @@
       </div>
     </section>
 
-    <!-- Direct Inquiry Form -->
+    <!-- Clean Contact Form Section -->
     <section id="contact" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Side: Interactive Buttons (No Plain Details Displayed) -->
         <div class="lg:col-span-5 space-y-6">
           <span class="text-xs font-mono uppercase tracking-widest text-blue-400">Direct Inquiries</span>
           <h2 class="text-3xl sm:text-5xl font-black text-white">Let’s Create Together.</h2>
           <p class="text-zinc-400 text-sm leading-relaxed">
-            Fill the inquiry form. Real-time anti-spam verification, draft auto-save, and input sanitization are active.
+            Have a project in mind? Use the buttons below for direct contact, or submit the form for a fast proposal.
           </p>
 
           <div class="pt-4 space-y-3">
-            <!-- Scraper-Protected Obfuscated Channels -->
-            <div onclick="triggerEmail()" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-blue-500/40 transition">
-              <span class="text-2xl">✉️</span>
-              <div>
-                <div class="text-[10px] uppercase font-mono text-zinc-500">Official Email</div>
-                <div id="disp-email" class="text-sm font-semibold text-zinc-200">Click to Reveal & Mail</div>
+            <!-- Email Button (Direct Action) -->
+            <button onclick="triggerEmail()" class="w-full flex items-center justify-between p-4 rounded-2xl card-glass border border-white/10 hover:border-blue-500/40 text-left transition group">
+              <div class="flex items-center gap-4">
+                <span class="text-2xl p-2 rounded-xl bg-blue-500/10 text-blue-400">✉️</span>
+                <div>
+                  <div class="text-[10px] uppercase font-mono text-zinc-500">Official Channel</div>
+                  <div class="text-sm font-bold text-zinc-200 group-hover:text-blue-400 transition">Send Email Directly</div>
+                </div>
               </div>
-            </div>
-            <div onclick="triggerDirectWA('Direct Contact Box')" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-emerald-500/40 transition">
-              <span class="text-2xl">📱</span>
-              <div>
-                <div class="text-[10px] uppercase font-mono text-zinc-500">WhatsApp / Call</div>
-                <div id="disp-phone" class="text-sm font-semibold text-zinc-200">Click to Chat on WhatsApp</div>
+              <span class="text-xs font-semibold text-zinc-500 group-hover:text-white transition">Open Mail →</span>
+            </button>
+
+            <!-- WhatsApp Button (Direct Action) -->
+            <button onclick="triggerDirectWA('Direct Contact Button')" class="w-full flex items-center justify-between p-4 rounded-2xl card-glass border border-white/10 hover:border-emerald-500/40 text-left transition group">
+              <div class="flex items-center gap-4">
+                <span class="text-2xl p-2 rounded-xl bg-emerald-500/10 text-emerald-400">📱</span>
+                <div>
+                  <div class="text-[10px] uppercase font-mono text-zinc-500">Instant Response</div>
+                  <div class="text-sm font-bold text-zinc-200 group-hover:text-emerald-400 transition">Chat on WhatsApp</div>
+                </div>
               </div>
-            </div>
+              <span class="text-xs font-semibold text-zinc-500 group-hover:text-white transition">Start Chat →</span>
+            </button>
           </div>
         </div>
 
+        <!-- Right Side: Customer Input Form (Clean Placeholder, No Self-Number) -->
         <div class="lg:col-span-7">
           <div class="card-glass rounded-3xl p-8 sm:p-10">
             <div id="abuseAlert" class="hidden mb-4 p-3 rounded-xl border border-rose-500/20 bg-rose-500/10 text-rose-400 text-xs">
               ⚠️ Please maintain respectful and professional language.
             </div>
-            <div id="rateLimitAlert" class="hidden mb-4 p-3 rounded-xl border border-amber-500/20 bg-amber-500/10 text-amber-400 text-xs">
-              ⏳ An inquiry was submitted recently. Please wait 60 seconds before sending another.
-            </div>
 
             <form id="contactForm" onsubmit="handleForm(event)" class="space-y-4">
-              <!-- Security Honeypot (Invisible to humans, catches automated scraper bots) -->
+              <!-- Honeypot Bot Trap -->
               <input type="text" id="bot_trap_company" name="bot_trap_company" class="hidden" tabindex="-1" autocomplete="off" />
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="text-[11px] font-mono uppercase text-zinc-400">Name</label>
-                  <input required type="text" id="fn" placeholder="Your Name" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <label class="text-[11px] font-mono uppercase text-zinc-400">Your Name</label>
+                  <input required type="text" id="fn" placeholder="Enter your name" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
                 <div>
-                  <label class="text-[11px] font-mono uppercase text-zinc-400">Email</label>
-                  <input required type="email" id="fe" placeholder="your@email.com" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <label class="text-[11px] font-mono uppercase text-zinc-400">Your Email</label>
+                  <input required type="email" id="fe" placeholder="name@company.com" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="text-[11px] font-mono uppercase text-zinc-400">Phone</label>
-                  <input type="tel" id="fp" placeholder="+91 XXXXX XXXXX" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <label class="text-[11px] font-mono uppercase text-zinc-400">Your Phone / WhatsApp</label>
+                  <!-- Clean placeholder for customer, no pre-filled numbers -->
+                  <input required type="tel" id="fp" placeholder="+91 XXXXX XXXXX" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Service Category</label>
@@ -445,19 +451,17 @@
     </div>
   </div>
 
-  <!-- Floating WhatsApp Trigger -->
+  <!-- Floating WhatsApp Action -->
   <button id="waWidget" onclick="triggerDirectWA('Floating Button Click')" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
     <span>💬 Chat on WhatsApp</span>
   </button>
 
   <!-- Hardened Security & Interactive Logic -->
   <script>
-    // 1. Anti-Scraper Contact Obfuscation (Base64 Hidden)
-    // Prevents automated web crawlers from scraping your raw phone and email
+    // Obfuscated Security Config (Hidden from crawlers & scrapers)
     const SEC_CONF = {
       _p: atob("OTE3ODAwNDk4ODI4"), // 917800498828
-      _e: atob("cmlzaGlrdXNod2FoYTc4MDBAZ21haWwuY29t"), // rishikushwaha7800@gmail.com
-      pageLoadTime: Date.now()
+      _e: atob("cmlzaGlrdXNod2FoYTc4MDBAZ21haWwuY29t") // rishikushwaha7800@gmail.com
     };
 
     function triggerDirectWA(context) {
@@ -469,13 +473,7 @@
       window.location.href = `mailto:${SEC_CONF._e}?subject=Project%20Collaboration`;
     }
 
-    // Display contact values safely on user interaction
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('disp-phone').innerText = "+91 78004 98828";
-      document.getElementById('disp-email').innerText = SEC_CONF._e;
-    });
-
-    // 2. Strict Input Sanitization Function (XSS & Injection Protection)
+    // Input Sanitizer (Prevents HTML / XSS Injection)
     function sanitizeInput(str) {
       if (!str) return '';
       return String(str)
@@ -488,7 +486,7 @@
         .trim();
     }
 
-    // 3. Typewriter Animation
+    // Typewriter Header Effect
     const roles = ["Video Editing & VFX", "Cinematic 4K Shooting", "High-CTR Thumbnails", "Fullstack Web Systems"];
     let roleIdx = 0, charIdx = 0, isDeleting = false;
     const typewriter = document.getElementById("typewriter");
@@ -516,7 +514,7 @@
     }
     typeLoop();
 
-    // 4. Modal Triggers
+    // Modal Handlers
     function openModal(title, desc) {
       document.getElementById('modalTitle').innerText = title;
       document.getElementById('modalDesc').innerText = desc;
@@ -531,7 +529,7 @@
       m.classList.remove('flex');
     }
 
-    // 5. WhatsApp Floating Trigger
+    // Floating WhatsApp Delay
     const wa = document.getElementById('waWidget');
     let shown = false;
     function showWhatsApp() {
@@ -544,7 +542,7 @@
     setTimeout(showWhatsApp, 4000);
     window.addEventListener('scroll', () => { if (window.scrollY > 200) showWhatsApp(); });
 
-    // 6. Custom Scope WhatsApp Submission
+    // Custom Order Box
     function sendCustomRequirement() {
       const text = sanitizeInput(document.getElementById('customInput').value);
       if (!text) {
@@ -554,7 +552,7 @@
       triggerDirectWA(`Custom Plan Request: ${text}`);
     }
 
-    // 7. Chatbot Assistant
+    // Chatbot Functions
     function toggleChatbot() {
       const box = document.getElementById('chatbotBox');
       box.classList.toggle('hidden');
@@ -571,88 +569,53 @@
       inp.value = '';
 
       setTimeout(() => {
-        let reply = "Rishi can easily do this! Reach out on WhatsApp for exact quotes and delivery dates.";
+        let reply = "Rishi can handle this! You can chat with him directly for pricing and deadlines.";
         const low = val.toLowerCase();
         if (low.includes('software') || low.includes('rate') || low.includes('price')) {
-          reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at up to 80% discount with instant activation.";
+          reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at wholesale discounts with instant activation.";
         } else if (low.includes('video') || low.includes('edit') || low.includes('reel')) {
-          reply = "Rishi provides 4K video editing, viral pacing, audio sound-effects, and color grading. Share your raw footage to get started!";
+          reply = "Rishi creates viral Reels, podcasts, and 4K YouTube edits with Premiere Pro & After Effects.";
         } else if (low.includes('web') || low.includes('site')) {
-          reply = "Next.js & responsive web platforms can be designed and deployed within 2-4 business days.";
+          reply = "Next.js modern responsive portfolios and web platforms can be deployed rapidly.";
         }
         msgs.innerHTML += `<div class="bg-zinc-900 border border-white/5 p-3 rounded-2xl rounded-tl-none text-zinc-300">${reply} <br><button onclick="triggerDirectWA('${val}')" class="text-blue-400 font-bold underline mt-1 block">Chat on WhatsApp →</button></div>`;
         msgs.scrollTop = msgs.scrollHeight;
       }, 400);
     }
 
-    // 8. Form Moderation, Anti-Spam Rate Limit & Honeypot Trap
+    // Form Moderation & Safe Submission
     const badWords = ['scam', 'fraud', 'abuse', 'fuck', 'shit', 'idiot', 'spam'];
-    const fields = ['fn', 'fe', 'fp', 'fs', 'fm'];
     const alertEl = document.getElementById('abuseAlert');
-    const rateLimitEl = document.getElementById('rateLimitAlert');
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const saved = localStorage.getItem('rishi_form_cache');
-      if (saved) {
-        try {
-          const d = JSON.parse(saved);
-          fields.forEach(f => { if(d[f]) document.getElementById(f).value = d[f]; });
-        } catch(e){}
-      }
-    });
-
-    function checkAbuse() {
-      let isBad = false;
-      const cache = {};
-      fields.forEach(f => {
-        const v = document.getElementById(f).value;
-        cache[f] = v;
-        badWords.forEach(w => { if(v.toLowerCase().includes(w)) isBad = true; });
-      });
-      localStorage.setItem('rishi_form_cache', JSON.stringify(cache));
-      if (isBad) alertEl.classList.remove('hidden');
-      else alertEl.classList.add('hidden');
-      return isBad;
-    }
-    fields.forEach(f => document.getElementById(f).addEventListener('input', checkAbuse));
 
     function handleForm(e) {
       e.preventDefault();
 
-      // Trap 1: Honeypot Check (If filled, silently abort bot)
-      if (document.getElementById('bot_trap_company').value) {
-        console.warn('Bot detected by honeypot.');
-        return;
-      }
-
-      // Trap 2: Minimum Submission Time Check (Bots submit in <1.5s)
-      if (Date.now() - SEC_CONF.pageLoadTime < 2500) {
-        console.warn('Rapid automated submission blocked.');
-        return;
-      }
-
-      // Trap 3: Client Rate-Limiting (60-second cooldown)
-      const lastSent = localStorage.getItem('rishi_last_form_ts');
-      if (lastSent && Date.now() - parseInt(lastSent) < 60000) {
-        rateLimitEl.classList.remove('hidden');
-        return;
-      }
-      rateLimitEl.classList.add('hidden');
-
-      // Trap 4: Abuse filter
-      if (checkAbuse()) {
-        alert('Please remove abusive language before submitting.');
-        return;
-      }
+      // Silent Honeypot Bot Trap
+      if (document.getElementById('bot_trap_company').value) return;
 
       const n = sanitizeInput(document.getElementById('fn').value);
+      const em = sanitizeInput(document.getElementById('fe').value);
+      const p = sanitizeInput(document.getElementById('fp').value);
       const s = sanitizeInput(document.getElementById('fs').value);
       const m = sanitizeInput(document.getElementById('fm').value);
 
-      localStorage.removeItem('rishi_form_cache');
-      localStorage.setItem('rishi_last_form_ts', Date.now().toString());
+      // Profanity check
+      let isBad = false;
+      [n, em, p, m].forEach(v => {
+        badWords.forEach(w => { if (v.toLowerCase().includes(w)) isBad = true; });
+      });
 
-      triggerDirectWA(`Inquiry from ${n} | Service: ${s} | Brief: ${m}`);
+      if (isBad) {
+        alertEl.classList.remove('hidden');
+        return;
+      }
+      alertEl.classList.add('hidden');
+
+      // Clear any cached draft
+      localStorage.removeItem('rishi_form_cache');
+
+      // Dispatch inquiry cleanly to WhatsApp
+      triggerDirectWA(`Inquiry from ${n} | Phone: ${p} | Email: ${em} | Service: ${s} | Brief: ${m}`);
       document.getElementById('contactForm').reset();
     }
   </script>
@@ -662,10 +625,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Security Headers: Clickjacking & Injection Defense -->
   <meta http-equiv="X-Frame-Options" content="DENY" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Rishi Kushwaha — Production Media & Web Systems</title>
 
   <!-- Tailwind CSS CDN -->
@@ -742,8 +703,7 @@
           <button onclick="toggleChatbot()" class="p-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white transition flex items-center gap-1.5 px-3 text-xs font-semibold">
             💬 Ask AI
           </button>
-          <!-- Obfuscated WhatsApp Trigger (Spam-bot safe) -->
-          <button onclick="triggerDirectWA('General Inquiry')" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
+          <button onclick="triggerDirectWA('Navbar Quick WhatsApp')" class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-black font-bold text-xs transition">
             WhatsApp
           </button>
         </div>
@@ -754,7 +714,7 @@
     <header class="pt-24 pb-20 px-6 text-center">
       <div class="max-w-5xl mx-auto">
         <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400 mb-8">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Verified Security & High-Performance Architecture
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Available for Selected High-Impact Projects
         </div>
 
         <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.1]">
@@ -794,8 +754,8 @@
             <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Software Discount</div>
           </div>
           <div class="p-3">
-            <div class="text-3xl font-black text-emerald-400">Protected</div>
-            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Anti-Spam Verified</div>
+            <div class="text-3xl font-black text-emerald-400">Direct</div>
+            <div class="text-[11px] font-mono text-zinc-400 uppercase mt-1">Instant Support</div>
           </div>
         </div>
       </div>
@@ -924,7 +884,7 @@
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SAVE 80%</span>
-              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Lifetime / Sub</h4>
+              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Upgrade</h4>
               <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent exports.</p>
             </div>
             <button onclick="triggerDirectWA('Canva Pro Price Inquiry')" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</button>
@@ -969,63 +929,72 @@
       </div>
     </section>
 
-    <!-- Direct Inquiry Form -->
+    <!-- Clean Contact Form Section -->
     <section id="contact" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Side: Interactive Buttons (No Plain Details Displayed) -->
         <div class="lg:col-span-5 space-y-6">
           <span class="text-xs font-mono uppercase tracking-widest text-blue-400">Direct Inquiries</span>
           <h2 class="text-3xl sm:text-5xl font-black text-white">Let’s Create Together.</h2>
           <p class="text-zinc-400 text-sm leading-relaxed">
-            Fill the inquiry form. Real-time anti-spam verification, draft auto-save, and input sanitization are active.
+            Have a project in mind? Use the buttons below for direct contact, or submit the form for a fast proposal.
           </p>
 
           <div class="pt-4 space-y-3">
-            <!-- Scraper-Protected Obfuscated Channels -->
-            <div onclick="triggerEmail()" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-blue-500/40 transition">
-              <span class="text-2xl">✉️</span>
-              <div>
-                <div class="text-[10px] uppercase font-mono text-zinc-500">Official Email</div>
-                <div id="disp-email" class="text-sm font-semibold text-zinc-200">Click to Reveal & Mail</div>
+            <!-- Email Button (Direct Action) -->
+            <button onclick="triggerEmail()" class="w-full flex items-center justify-between p-4 rounded-2xl card-glass border border-white/10 hover:border-blue-500/40 text-left transition group">
+              <div class="flex items-center gap-4">
+                <span class="text-2xl p-2 rounded-xl bg-blue-500/10 text-blue-400">✉️</span>
+                <div>
+                  <div class="text-[10px] uppercase font-mono text-zinc-500">Official Channel</div>
+                  <div class="text-sm font-bold text-zinc-200 group-hover:text-blue-400 transition">Send Email Directly</div>
+                </div>
               </div>
-            </div>
-            <div onclick="triggerDirectWA('Direct Contact Box')" class="flex items-center gap-4 p-4 rounded-2xl card-glass cursor-pointer hover:border-emerald-500/40 transition">
-              <span class="text-2xl">📱</span>
-              <div>
-                <div class="text-[10px] uppercase font-mono text-zinc-500">WhatsApp / Call</div>
-                <div id="disp-phone" class="text-sm font-semibold text-zinc-200">Click to Chat on WhatsApp</div>
+              <span class="text-xs font-semibold text-zinc-500 group-hover:text-white transition">Open Mail →</span>
+            </button>
+
+            <!-- WhatsApp Button (Direct Action) -->
+            <button onclick="triggerDirectWA('Direct Contact Button')" class="w-full flex items-center justify-between p-4 rounded-2xl card-glass border border-white/10 hover:border-emerald-500/40 text-left transition group">
+              <div class="flex items-center gap-4">
+                <span class="text-2xl p-2 rounded-xl bg-emerald-500/10 text-emerald-400">📱</span>
+                <div>
+                  <div class="text-[10px] uppercase font-mono text-zinc-500">Instant Response</div>
+                  <div class="text-sm font-bold text-zinc-200 group-hover:text-emerald-400 transition">Chat on WhatsApp</div>
+                </div>
               </div>
-            </div>
+              <span class="text-xs font-semibold text-zinc-500 group-hover:text-white transition">Start Chat →</span>
+            </button>
           </div>
         </div>
 
+        <!-- Right Side: Customer Input Form (Clean Placeholder, No Self-Number) -->
         <div class="lg:col-span-7">
           <div class="card-glass rounded-3xl p-8 sm:p-10">
             <div id="abuseAlert" class="hidden mb-4 p-3 rounded-xl border border-rose-500/20 bg-rose-500/10 text-rose-400 text-xs">
               ⚠️ Please maintain respectful and professional language.
             </div>
-            <div id="rateLimitAlert" class="hidden mb-4 p-3 rounded-xl border border-amber-500/20 bg-amber-500/10 text-amber-400 text-xs">
-              ⏳ An inquiry was submitted recently. Please wait 60 seconds before sending another.
-            </div>
 
             <form id="contactForm" onsubmit="handleForm(event)" class="space-y-4">
-              <!-- Security Honeypot (Invisible to humans, catches automated scraper bots) -->
+              <!-- Honeypot Bot Trap -->
               <input type="text" id="bot_trap_company" name="bot_trap_company" class="hidden" tabindex="-1" autocomplete="off" />
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="text-[11px] font-mono uppercase text-zinc-400">Name</label>
-                  <input required type="text" id="fn" placeholder="Your Name" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <label class="text-[11px] font-mono uppercase text-zinc-400">Your Name</label>
+                  <input required type="text" id="fn" placeholder="Enter your name" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
                 <div>
-                  <label class="text-[11px] font-mono uppercase text-zinc-400">Email</label>
-                  <input required type="email" id="fe" placeholder="your@email.com" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <label class="text-[11px] font-mono uppercase text-zinc-400">Your Email</label>
+                  <input required type="email" id="fe" placeholder="name@company.com" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="text-[11px] font-mono uppercase text-zinc-400">Phone</label>
-                  <input type="tel" id="fp" placeholder="+91 XXXXX XXXXX" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
+                  <label class="text-[11px] font-mono uppercase text-zinc-400">Your Phone / WhatsApp</label>
+                  <!-- Clean placeholder for customer, no pre-filled numbers -->
+                  <input required type="tel" id="fp" placeholder="+91 XXXXX XXXXX" class="mt-1 w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white focus:border-blue-500 focus:outline-none" />
                 </div>
                 <div>
                   <label class="text-[11px] font-mono uppercase text-zinc-400">Service Category</label>
@@ -1104,19 +1073,17 @@
     </div>
   </div>
 
-  <!-- Floating WhatsApp Trigger -->
+  <!-- Floating WhatsApp Action -->
   <button id="waWidget" onclick="triggerDirectWA('Floating Button Click')" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
     <span>💬 Chat on WhatsApp</span>
   </button>
 
   <!-- Hardened Security & Interactive Logic -->
   <script>
-    // 1. Anti-Scraper Contact Obfuscation (Base64 Hidden)
-    // Prevents automated web crawlers from scraping your raw phone and email
+    // Obfuscated Security Config (Hidden from crawlers & scrapers)
     const SEC_CONF = {
       _p: atob("OTE3ODAwNDk4ODI4"), // 917800498828
-      _e: atob("cmlzaGlrdXNod2FoYTc4MDBAZ21haWwuY29t"), // rishikushwaha7800@gmail.com
-      pageLoadTime: Date.now()
+      _e: atob("cmlzaGlrdXNod2FoYTc4MDBAZ21haWwuY29t") // rishikushwaha7800@gmail.com
     };
 
     function triggerDirectWA(context) {
@@ -1128,13 +1095,7 @@
       window.location.href = `mailto:${SEC_CONF._e}?subject=Project%20Collaboration`;
     }
 
-    // Display contact values safely on user interaction
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('disp-phone').innerText = "+91 78004 98828";
-      document.getElementById('disp-email').innerText = SEC_CONF._e;
-    });
-
-    // 2. Strict Input Sanitization Function (XSS & Injection Protection)
+    // Input Sanitizer (Prevents HTML / XSS Injection)
     function sanitizeInput(str) {
       if (!str) return '';
       return String(str)
@@ -1147,7 +1108,7 @@
         .trim();
     }
 
-    // 3. Typewriter Animation
+    // Typewriter Header Effect
     const roles = ["Video Editing & VFX", "Cinematic 4K Shooting", "High-CTR Thumbnails", "Fullstack Web Systems"];
     let roleIdx = 0, charIdx = 0, isDeleting = false;
     const typewriter = document.getElementById("typewriter");
@@ -1175,7 +1136,7 @@
     }
     typeLoop();
 
-    // 4. Modal Triggers
+    // Modal Handlers
     function openModal(title, desc) {
       document.getElementById('modalTitle').innerText = title;
       document.getElementById('modalDesc').innerText = desc;
@@ -1190,7 +1151,7 @@
       m.classList.remove('flex');
     }
 
-    // 5. WhatsApp Floating Trigger
+    // Floating WhatsApp Delay
     const wa = document.getElementById('waWidget');
     let shown = false;
     function showWhatsApp() {
@@ -1203,7 +1164,7 @@
     setTimeout(showWhatsApp, 4000);
     window.addEventListener('scroll', () => { if (window.scrollY > 200) showWhatsApp(); });
 
-    // 6. Custom Scope WhatsApp Submission
+    // Custom Order Box
     function sendCustomRequirement() {
       const text = sanitizeInput(document.getElementById('customInput').value);
       if (!text) {
@@ -1213,7 +1174,7 @@
       triggerDirectWA(`Custom Plan Request: ${text}`);
     }
 
-    // 7. Chatbot Assistant
+    // Chatbot Functions
     function toggleChatbot() {
       const box = document.getElementById('chatbotBox');
       box.classList.toggle('hidden');
@@ -1230,90 +1191,55 @@
       inp.value = '';
 
       setTimeout(() => {
-        let reply = "Rishi can easily do this! Reach out on WhatsApp for exact quotes and delivery dates.";
+        let reply = "Rishi can handle this! You can chat with him directly for pricing and deadlines.";
         const low = val.toLowerCase();
         if (low.includes('software') || low.includes('rate') || low.includes('price')) {
-          reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at up to 80% discount with instant activation.";
+          reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at wholesale discounts with instant activation.";
         } else if (low.includes('video') || low.includes('edit') || low.includes('reel')) {
-          reply = "Rishi provides 4K video editing, viral pacing, audio sound-effects, and color grading. Share your raw footage to get started!";
+          reply = "Rishi creates viral Reels, podcasts, and 4K YouTube edits with Premiere Pro & After Effects.";
         } else if (low.includes('web') || low.includes('site')) {
-          reply = "Next.js & responsive web platforms can be designed and deployed within 2-4 business days.";
+          reply = "Next.js modern responsive portfolios and web platforms can be deployed rapidly.";
         }
         msgs.innerHTML += `<div class="bg-zinc-900 border border-white/5 p-3 rounded-2xl rounded-tl-none text-zinc-300">${reply} <br><button onclick="triggerDirectWA('${val}')" class="text-blue-400 font-bold underline mt-1 block">Chat on WhatsApp →</button></div>`;
         msgs.scrollTop = msgs.scrollHeight;
       }, 400);
     }
 
-    // 8. Form Moderation, Anti-Spam Rate Limit & Honeypot Trap
+    // Form Moderation & Safe Submission
     const badWords = ['scam', 'fraud', 'abuse', 'fuck', 'shit', 'idiot', 'spam'];
-    const fields = ['fn', 'fe', 'fp', 'fs', 'fm'];
     const alertEl = document.getElementById('abuseAlert');
-    const rateLimitEl = document.getElementById('rateLimitAlert');
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const saved = localStorage.getItem('rishi_form_cache');
-      if (saved) {
-        try {
-          const d = JSON.parse(saved);
-          fields.forEach(f => { if(d[f]) document.getElementById(f).value = d[f]; });
-        } catch(e){}
-      }
-    });
-
-    function checkAbuse() {
-      let isBad = false;
-      const cache = {};
-      fields.forEach(f => {
-        const v = document.getElementById(f).value;
-        cache[f] = v;
-        badWords.forEach(w => { if(v.toLowerCase().includes(w)) isBad = true; });
-      });
-      localStorage.setItem('rishi_form_cache', JSON.stringify(cache));
-      if (isBad) alertEl.classList.remove('hidden');
-      else alertEl.classList.add('hidden');
-      return isBad;
-    }
-    fields.forEach(f => document.getElementById(f).addEventListener('input', checkAbuse));
 
     function handleForm(e) {
       e.preventDefault();
 
-      // Trap 1: Honeypot Check (If filled, silently abort bot)
-      if (document.getElementById('bot_trap_company').value) {
-        console.warn('Bot detected by honeypot.');
-        return;
-      }
-
-      // Trap 2: Minimum Submission Time Check (Bots submit in <1.5s)
-      if (Date.now() - SEC_CONF.pageLoadTime < 2500) {
-        console.warn('Rapid automated submission blocked.');
-        return;
-      }
-
-      // Trap 3: Client Rate-Limiting (60-second cooldown)
-      const lastSent = localStorage.getItem('rishi_last_form_ts');
-      if (lastSent && Date.now() - parseInt(lastSent) < 60000) {
-        rateLimitEl.classList.remove('hidden');
-        return;
-      }
-      rateLimitEl.classList.add('hidden');
-
-      // Trap 4: Abuse filter
-      if (checkAbuse()) {
-        alert('Please remove abusive language before submitting.');
-        return;
-      }
+      // Silent Honeypot Bot Trap
+      if (document.getElementById('bot_trap_company').value) return;
 
       const n = sanitizeInput(document.getElementById('fn').value);
+      const em = sanitizeInput(document.getElementById('fe').value);
+      const p = sanitizeInput(document.getElementById('fp').value);
       const s = sanitizeInput(document.getElementById('fs').value);
       const m = sanitizeInput(document.getElementById('fm').value);
 
-      localStorage.removeItem('rishi_form_cache');
-      localStorage.setItem('rishi_last_form_ts', Date.now().toString());
+      // Profanity check
+      let isBad = false;
+      [n, em, p, m].forEach(v => {
+        badWords.forEach(w => { if (v.toLowerCase().includes(w)) isBad = true; });
+      });
 
-      triggerDirectWA(`Inquiry from ${n} | Service: ${s} | Brief: ${m}`);
+      if (isBad) {
+        alertEl.classList.remove('hidden');
+        return;
+      }
+      alertEl.classList.add('hidden');
+
+      // Clear any cached draft
+      localStorage.removeItem('rishi_form_cache');
+
+      // Dispatch inquiry cleanly to WhatsApp
+      triggerDirectWA(`Inquiry from ${n} | Phone: ${p} | Email: ${em} | Service: ${s} | Brief: ${m}`);
       document.getElementById('contactForm').reset();
     }
   </script>
 </body>
-                      </html>
+</html>
