@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rishi Kushwaha — Creative Producer, Developer & Growth</title>
-  <meta name="description" content="Portfolio of Rishi Kushwaha. Video Editing, Studio Shooting, Graphic Design, Web Development, and Discounted Software." />
+  <title>Rishi Kushwaha — Portfolio</title>
+  <meta name="description" content="Portfolio of Rishi Kushwaha. Video Editing, Studio Shooting, Graphics, Web Development, and Discounted Software." />
 
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -15,24 +15,25 @@
     * {
       font-family: 'Plus Jakarta Sans', sans-serif;
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
       background-color: #060609;
       color: #ffffff;
       overflow-x: hidden;
     }
-    /* Ambient Cyber Background */
     .bg-grid {
-      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-      background-size: 28px 28px;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
     }
-    .hero-radial {
-      background: radial-gradient(circle at 50% -10%, rgba(59, 130, 246, 0.22) 0%, rgba(147, 51, 234, 0.12) 40%, transparent 75%);
+    .hero-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18) 0%, rgba(147, 51, 234, 0.1) 40%, transparent 75%);
     }
     .card-glass {
       background: rgba(14, 14, 20, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -49,15 +50,15 @@
 </head>
 <body class="selection:bg-blue-600 selection:text-white bg-grid">
 
-  <!-- Ambient Top Glow -->
-  <div class="fixed top-0 left-0 right-0 h-[500px] hero-radial pointer-events-none z-0"></div>
+  <!-- Ambient Background Glow -->
+  <div class="fixed top-0 left-0 right-0 h-[480px] hero-glow pointer-events-none z-0"></div>
 
   <div class="relative z-10">
-    <!-- Navbar -->
-    <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-[#060609]/85 backdrop-blur-xl">
+    <!-- Single Clean Navigation Bar -->
+    <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-[#060609]/90 backdrop-blur-xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
-          <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/20 text-sm">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/25 text-sm">
             RK
           </div>
           <div>
@@ -87,7 +88,7 @@
       </div>
     </nav>
 
-    <!-- Hero Section with Auto Typing Effect -->
+    <!-- Hero Section with Typewriter Effect -->
     <header class="pt-24 pb-20 px-6 text-center">
       <div class="max-w-5xl mx-auto">
         <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400 mb-8">
@@ -116,7 +117,7 @@
           </a>
         </div>
 
-        <!-- Quick Stats -->
+        <!-- Quick Stats Metrics -->
         <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10">
           <div class="p-3">
             <div class="text-3xl font-black text-white">4K 60FPS</div>
@@ -138,13 +139,13 @@
       </div>
     </header>
 
-    <!-- Services Section -->
+    <!-- Services Grid Section -->
     <section id="services" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-xs font-mono uppercase tracking-widest text-blue-400">Services Suite</span>
           <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">End-to-End Creative Capabilities</h2>
-          <p class="mt-3 text-zinc-400 text-sm sm:text-base">Everything needed to build authority, scale engagement, and run digital business operations.</p>
+          <p class="mt-3 text-zinc-400 text-sm sm:text-base">Everything needed to build brand authority, scale retention, and run business operations.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -218,7 +219,7 @@
             </div>
           </div>
 
-          <!-- 6. Software Licenses -->
+          <!-- 6. Software Deals -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🔑</div>
             <h3 class="text-xl font-bold text-white">Discounted Software Subscriptions</h3>
@@ -283,7 +284,7 @@
       </div>
     </section>
 
-    <!-- Discounted Software Hub -->
+    <!-- Discounted Software Deals Store -->
     <section id="software" class="py-24 px-6 border-t border-white/5 bg-gradient-to-b from-transparent via-blue-950/15 to-transparent">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -291,7 +292,7 @@
             <span class="text-xs font-mono uppercase tracking-widest text-purple-400">Wholesale Store</span>
             <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">Discounted Software Deals</h2>
             <p class="mt-3 text-zinc-400 text-sm sm:text-base max-w-xl">
-              100% genuine licenses for high-end creative, productivity, and trading tools at heavily slashed prices.
+              100% genuine licenses for creative, productivity, and trading tools at heavily slashed prices.
             </p>
           </div>
           <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20mujhe%20software%20deals%20ke%20price%20chahiye." target="_blank" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
@@ -314,7 +315,7 @@
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SAVE 80%</span>
-              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Lifetime / Sub</h4>
+              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Upgrade</h4>
               <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent background remover.</p>
             </div>
             <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Canva%20Pro%20ka%20rate%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
@@ -343,10 +344,10 @@
       </div>
     </section>
 
-    <!-- Custom Requirement Section -->
+    <!-- Custom Order Box -->
     <section id="custom" class="py-20 px-6 border-t border-white/5">
       <div class="max-w-5xl mx-auto rounded-3xl p-8 sm:p-12 card-glass border border-blue-500/30 bg-gradient-to-r from-blue-950/20 via-zinc-900/60 to-purple-950/20">
-        <span class="text-xs font-mono uppercase tracking-wider text-blue-400">Custom Order Box</span>
+        <span class="text-xs font-mono uppercase tracking-wider text-blue-400">Custom Scope</span>
         <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Didn’t find your specific requirement?</h3>
         <p class="mt-3 text-sm text-zinc-300 max-w-2xl leading-relaxed">
           Need a monthly bulk video package, specialized on-location shoot, custom website integration, or custom bundled deal? Type it below:
@@ -361,7 +362,7 @@
       </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Direct Inquiry Form -->
     <section id="contact" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div class="lg:col-span-5 space-y-6">
@@ -439,13 +440,13 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Single Final Footer -->
     <footer class="py-12 border-t border-white/5 text-center text-xs text-zinc-500">
       <p>© 2026 Rishi Kushwaha. Video Editing • Shooting • Graphics • Web Engineering.</p>
     </footer>
   </div>
 
-  <!-- Interactive Project Modal (Safe Coming Soon Alert) -->
+  <!-- Interactive Project Modal -->
   <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-md p-6">
     <div class="max-w-md w-full card-glass rounded-3xl p-6 border border-white/15 shadow-2xl relative">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-lg font-bold">✕</button>
@@ -464,7 +465,7 @@
     </div>
   </div>
 
-  <!-- Rishi AI Chatbot Floating Box -->
+  <!-- AI Chatbot Floating Box -->
   <div id="chatbotBox" class="fixed bottom-24 right-6 z-50 hidden flex-col w-80 sm:w-96 rounded-3xl border border-white/10 bg-zinc-950/95 backdrop-blur-2xl shadow-2xl overflow-hidden">
     <div class="p-4 bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-between">
       <div class="flex items-center gap-2">
@@ -489,14 +490,14 @@
     </div>
   </div>
 
-  <!-- Floating WhatsApp Button (5s Delayed + Scroll Aware) -->
+  <!-- Floating Delayed WhatsApp -->
   <a id="waWidget" href="https://wa.me/917800498828?text=Hi%20Rishi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
     <span>💬 Chat on WhatsApp</span>
   </a>
 
-  <!-- 100% Robust, Fail-Proof Inline JavaScript -->
+  <!-- Safe JavaScript -->
   <script>
-    // 1. Typewriter Animation in Hero
+    // 1. Typewriter Animation
     const roles = ["Video Editing & VFX", "Cinematic 4K Shooting", "High-CTR Thumbnails", "Fullstack Web Systems"];
     let roleIdx = 0, charIdx = 0, isDeleting = false;
     const typewriter = document.getElementById("typewriter");
@@ -539,7 +540,7 @@
       m.classList.remove('flex');
     }
 
-    // 3. Floating WhatsApp Delayed
+    // 3. Floating WhatsApp
     const wa = document.getElementById('waWidget');
     let shown = false;
     function showWhatsApp() {
@@ -562,7 +563,7 @@
       window.open(`https://wa.me/917800498828?text=${encodeURIComponent('Hi Rishi, mujhe ye custom work discuss karna hai: ' + text)}`, '_blank');
     }
 
-    // 5. Chatbot Widget Engine
+    // 5. Chatbot Logic
     function toggleChatbot() {
       const box = document.getElementById('chatbotBox');
       box.classList.toggle('hidden');
@@ -579,7 +580,7 @@
       inp.value = '';
 
       setTimeout(() => {
-        let reply = "Rishi can easily do this! Reach out on WhatsApp for exact quotes and delivery dates.";
+        let reply = "Rishi can easily handle this! Reach out on WhatsApp for exact quotes and delivery dates.";
         const low = val.toLowerCase();
         if (low.includes('software') || low.includes('rate') || low.includes('price')) {
           reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at up to 80% discount with instant activation.";
@@ -644,10 +645,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rishi Kushwaha — Creative Producer, Developer & Growth</title>
-  <meta name="description" content="Portfolio of Rishi Kushwaha. Video Editing, Studio Shooting, Graphic Design, Web Development, and Discounted Software." />
+  <title>Rishi Kushwaha — Portfolio</title>
+  <meta name="description" content="Portfolio of Rishi Kushwaha. Video Editing, Studio Shooting, Graphics, Web Development, and Discounted Software." />
 
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -656,24 +657,25 @@
     * {
       font-family: 'Plus Jakarta Sans', sans-serif;
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
       background-color: #060609;
       color: #ffffff;
       overflow-x: hidden;
     }
-    /* Ambient Cyber Background */
     .bg-grid {
-      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-      background-size: 28px 28px;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
     }
-    .hero-radial {
-      background: radial-gradient(circle at 50% -10%, rgba(59, 130, 246, 0.22) 0%, rgba(147, 51, 234, 0.12) 40%, transparent 75%);
+    .hero-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18) 0%, rgba(147, 51, 234, 0.1) 40%, transparent 75%);
     }
     .card-glass {
       background: rgba(14, 14, 20, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -690,15 +692,15 @@
 </head>
 <body class="selection:bg-blue-600 selection:text-white bg-grid">
 
-  <!-- Ambient Top Glow -->
-  <div class="fixed top-0 left-0 right-0 h-[500px] hero-radial pointer-events-none z-0"></div>
+  <!-- Ambient Background Glow -->
+  <div class="fixed top-0 left-0 right-0 h-[480px] hero-glow pointer-events-none z-0"></div>
 
   <div class="relative z-10">
-    <!-- Navbar -->
-    <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-[#060609]/85 backdrop-blur-xl">
+    <!-- Single Clean Navigation Bar -->
+    <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-[#060609]/90 backdrop-blur-xl">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
-          <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/20 text-sm">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/25 text-sm">
             RK
           </div>
           <div>
@@ -728,7 +730,7 @@
       </div>
     </nav>
 
-    <!-- Hero Section with Auto Typing Effect -->
+    <!-- Hero Section with Typewriter Effect -->
     <header class="pt-24 pb-20 px-6 text-center">
       <div class="max-w-5xl mx-auto">
         <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400 mb-8">
@@ -757,7 +759,7 @@
           </a>
         </div>
 
-        <!-- Quick Stats -->
+        <!-- Quick Stats Metrics -->
         <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10">
           <div class="p-3">
             <div class="text-3xl font-black text-white">4K 60FPS</div>
@@ -779,13 +781,13 @@
       </div>
     </header>
 
-    <!-- Services Section -->
+    <!-- Services Grid Section -->
     <section id="services" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-xs font-mono uppercase tracking-widest text-blue-400">Services Suite</span>
           <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">End-to-End Creative Capabilities</h2>
-          <p class="mt-3 text-zinc-400 text-sm sm:text-base">Everything needed to build authority, scale engagement, and run digital business operations.</p>
+          <p class="mt-3 text-zinc-400 text-sm sm:text-base">Everything needed to build brand authority, scale retention, and run business operations.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -859,7 +861,7 @@
             </div>
           </div>
 
-          <!-- 6. Software Licenses -->
+          <!-- 6. Software Deals -->
           <div class="card-glass rounded-3xl p-8">
             <div class="text-3xl mb-4">🔑</div>
             <h3 class="text-xl font-bold text-white">Discounted Software Subscriptions</h3>
@@ -924,7 +926,7 @@
       </div>
     </section>
 
-    <!-- Discounted Software Hub -->
+    <!-- Discounted Software Deals Store -->
     <section id="software" class="py-24 px-6 border-t border-white/5 bg-gradient-to-b from-transparent via-blue-950/15 to-transparent">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -932,7 +934,7 @@
             <span class="text-xs font-mono uppercase tracking-widest text-purple-400">Wholesale Store</span>
             <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">Discounted Software Deals</h2>
             <p class="mt-3 text-zinc-400 text-sm sm:text-base max-w-xl">
-              100% genuine licenses for high-end creative, productivity, and trading tools at heavily slashed prices.
+              100% genuine licenses for creative, productivity, and trading tools at heavily slashed prices.
             </p>
           </div>
           <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20mujhe%20software%20deals%20ke%20price%20chahiye." target="_blank" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
@@ -955,7 +957,7 @@
           <div class="card-glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SAVE 80%</span>
-              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Lifetime / Sub</h4>
+              <h4 class="text-lg font-bold text-white mt-3">Canva Pro Upgrade</h4>
               <p class="text-xs text-zinc-400 mt-2">Unlimited premium assets, brand kits, AI magic tools, and transparent background remover.</p>
             </div>
             <a href="https://wa.me/917800498828?text=Hi%20Rishi,%20Canva%20Pro%20ka%20rate%20chahiye." target="_blank" class="mt-6 w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">Inquire Price</a>
@@ -984,10 +986,10 @@
       </div>
     </section>
 
-    <!-- Custom Requirement Section -->
+    <!-- Custom Order Box -->
     <section id="custom" class="py-20 px-6 border-t border-white/5">
       <div class="max-w-5xl mx-auto rounded-3xl p-8 sm:p-12 card-glass border border-blue-500/30 bg-gradient-to-r from-blue-950/20 via-zinc-900/60 to-purple-950/20">
-        <span class="text-xs font-mono uppercase tracking-wider text-blue-400">Custom Order Box</span>
+        <span class="text-xs font-mono uppercase tracking-wider text-blue-400">Custom Scope</span>
         <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Didn’t find your specific requirement?</h3>
         <p class="mt-3 text-sm text-zinc-300 max-w-2xl leading-relaxed">
           Need a monthly bulk video package, specialized on-location shoot, custom website integration, or custom bundled deal? Type it below:
@@ -1002,7 +1004,7 @@
       </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Direct Inquiry Form -->
     <section id="contact" class="py-24 px-6 border-t border-white/5">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div class="lg:col-span-5 space-y-6">
@@ -1080,13 +1082,13 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Single Final Footer -->
     <footer class="py-12 border-t border-white/5 text-center text-xs text-zinc-500">
       <p>© 2026 Rishi Kushwaha. Video Editing • Shooting • Graphics • Web Engineering.</p>
     </footer>
   </div>
 
-  <!-- Interactive Project Modal (Safe Coming Soon Alert) -->
+  <!-- Interactive Project Modal -->
   <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-md p-6">
     <div class="max-w-md w-full card-glass rounded-3xl p-6 border border-white/15 shadow-2xl relative">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-lg font-bold">✕</button>
@@ -1105,7 +1107,7 @@
     </div>
   </div>
 
-  <!-- Rishi AI Chatbot Floating Box -->
+  <!-- AI Chatbot Floating Box -->
   <div id="chatbotBox" class="fixed bottom-24 right-6 z-50 hidden flex-col w-80 sm:w-96 rounded-3xl border border-white/10 bg-zinc-950/95 backdrop-blur-2xl shadow-2xl overflow-hidden">
     <div class="p-4 bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-between">
       <div class="flex items-center gap-2">
@@ -1130,14 +1132,14 @@
     </div>
   </div>
 
-  <!-- Floating WhatsApp Button (5s Delayed + Scroll Aware) -->
+  <!-- Floating Delayed WhatsApp -->
   <a id="waWidget" href="https://wa.me/917800498828?text=Hi%20Rishi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105 active:scale-95">
     <span>💬 Chat on WhatsApp</span>
   </a>
 
-  <!-- 100% Robust, Fail-Proof Inline JavaScript -->
+  <!-- Safe JavaScript -->
   <script>
-    // 1. Typewriter Animation in Hero
+    // 1. Typewriter Animation
     const roles = ["Video Editing & VFX", "Cinematic 4K Shooting", "High-CTR Thumbnails", "Fullstack Web Systems"];
     let roleIdx = 0, charIdx = 0, isDeleting = false;
     const typewriter = document.getElementById("typewriter");
@@ -1180,7 +1182,7 @@
       m.classList.remove('flex');
     }
 
-    // 3. Floating WhatsApp Delayed
+    // 3. Floating WhatsApp
     const wa = document.getElementById('waWidget');
     let shown = false;
     function showWhatsApp() {
@@ -1203,7 +1205,7 @@
       window.open(`https://wa.me/917800498828?text=${encodeURIComponent('Hi Rishi, mujhe ye custom work discuss karna hai: ' + text)}`, '_blank');
     }
 
-    // 5. Chatbot Widget Engine
+    // 5. Chatbot Logic
     function toggleChatbot() {
       const box = document.getElementById('chatbotBox');
       box.classList.toggle('hidden');
@@ -1220,7 +1222,7 @@
       inp.value = '';
 
       setTimeout(() => {
-        let reply = "Rishi can easily do this! Reach out on WhatsApp for exact quotes and delivery dates.";
+        let reply = "Rishi can easily handle this! Reach out on WhatsApp for exact quotes and delivery dates.";
         const low = val.toLowerCase();
         if (low.includes('software') || low.includes('rate') || low.includes('price')) {
           reply = "Software deals (Adobe CC, Canva Pro, Windows keys) are available at up to 80% discount with instant activation.";
